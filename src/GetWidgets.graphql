@@ -1,5 +1,5 @@
 #import WidgetWithTags from './WidgetWithTags.graphql'
-query AllWidgets($usageInterval: Interval!) {
+query AllWidgets {
   widgets {
     id
     ...WidgetWithTags

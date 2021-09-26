@@ -1,0 +1,17 @@
+type Query {
+  widgets: [Widget!]
+}
+
+scalar Interval
+
+type Tag {
+  id: ID!
+  name: String
+  usageCount(interval: Interval!): Int
+}
+
+type Widget {
+  id: ID
+  name: String
+  tags: [Tag!]
+}

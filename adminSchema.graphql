@@ -1,0 +1,14 @@
+type AdminPortalMember {
+  earliestTimeline: AdminTimelineEntry
+  latestTimeline: AdminTimelineEntry
+}
+
+type AdminTimelineEntry {
+  providerId: ProviderId!
+}
+
+scalar ProviderId
+
+type Query {
+  allOwners: [AdminPortalMember!]!
+}

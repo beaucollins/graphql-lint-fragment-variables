@@ -1,0 +1,7 @@
+#import AdminMemberDetails from './sharedFields.graphql'
+
+query allOwners {
+  allOwners {
+    ...AdminMemberDetails
+  }
+}

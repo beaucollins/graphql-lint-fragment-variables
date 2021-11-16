@@ -1,0 +1,16 @@
+fragment AdminMemberInfo on AdminPortalMember {
+  earliestTimeline {
+    ...TimelineEntry
+  }
+  latestTimeline {
+    ...TimelineEntry
+  }
+}
+
+fragment AdminMemberDetails on AdminPortalMember {
+  ...AdminMemberInfo
+}
+
+fragment TimelineEntry on AdminTimelineEntry {
+  providerId
+}
